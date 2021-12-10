@@ -11,7 +11,7 @@ class SingelController extends Controller
 {
     public function getSingle($slug){
     	$post = Post::where('slug','=',$slug)->first();
-       	return view('blog.single',compact('post','cname'));
+       	return view('blog.single',compact('post'));
     }
 
     public function getIndex(){
